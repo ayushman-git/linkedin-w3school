@@ -25,6 +25,10 @@
   <strong>Strong -- to display bold visually and to have a semantic meaning to it</strong> <br />
   <i>Italic -- to display italic</i> <br />
   <em>Emphasis -- to display italic and have semantic meaning.</em>
+  <p>Sub<sub>script</sub><br>
+    Sup<sup>script</sup> <br>
+    <small>Text with small/little prominence.</small>
+  </p>
 
   <hr>
   <h1>Quotes</h1>
@@ -49,8 +53,10 @@
   <hr>
   <h1>HTML Entities + Code</h1>
   <p>This is the code for changing background color - <code>{ background-color: purple }</code>.<br>
-  A HTML tag for writing code - <code>&lt;code&gt;</code> <code>&lt;/code&gt;</code>
+    A HTML tag for writing code - <code>&lt;code&gt;</code> <code>&lt;/code&gt;</code>
   </p>
+  <p>Just to check non breaking space. Non breakable space will not break into a new line. Just to check
+    non&nbsp;breaking&nbsp;space.</p>
 
   <pre>
     <code>
@@ -72,6 +78,19 @@
       }
     </code>
   </pre>
+
+  <hr>
+  <h1>ARIA</h1>
+  <div aria-label="Hello">
+    <div aria-hidden="true">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+    </div>
+
+  </div>
 </body>
 
 </html>
