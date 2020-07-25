@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 ul li {
+  display: inline;
+  list-style: none;
+  padding-left: 40px;
+}
+
+code {
+  background-color: black ;
+  color: white;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+pre {
+  background-color: black;
+}
