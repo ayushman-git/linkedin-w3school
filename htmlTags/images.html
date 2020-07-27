@@ -8,21 +8,45 @@
 </head>
 
 <body>
-  <img src="https://www.xtrafondos.com/wallpapers/personajes-de-valorant-5474.jpg"
-    alt="a valorant fan art with neon lighting" width="600">
-  <p>
-    If there's a lot of content and images and user scrolls down, if the images are not loaded up yet and &lt;img&gt;
-    tag
-    don't have width and height attribute or its dimensions are not defined in css the scroll will go down as soon as
-    browser loads up the images. So if we want to maintain scroll position we give dimensions to the image.
-  </p>
-  <img src="https://media.giphy.com/media/3o85xzkvl1siB2rHSo/giphy.gif"
-  srcset="https://media.giphy.com/media/3o85xzkvl1siB2rHSo/giphy.gif 400w ,
-  https://specials-images.forbesimg.com/imageserve/5e010540e961e1000739c78a/960x0.jpg 600w"
-  sizes="max-width(600) 200,
-  max-width(800) 400"
-  width="600"
-  alt="a gif">
-</body>
+  <figure>
+    <img src="https://www.xtrafondos.com/wallpapers/personajes-de-valorant-5474.jpg"
+      alt="a valorant fan art with neon lighting" width="600">
+    <figcaption>
+      If there's a lot of content and images and user scrolls down, if the images are not loaded up yet and &lt;img&gt;
+      tag
+      don't have width and height attribute or its dimensions are not defined in css the scroll will go down as soon as
+      browser loads up the images. So if we want to maintain scroll position we give dimensions to the image.
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://media.giphy.com/media/3o85xzkvl1siB2rHSo/giphy.gif" srcset="https://media.giphy.com/media/3o85xzkvl1siB2rHSo/giphy.gif 400w ,
+  https://specials-images.forbesimg.com/imageserve/5e010540e961e1000739c78a/960x0.jpg 600w" sizes="(max-width: 400px) 200px,
+         400px" width="600" alt="a gif">
+    <figcaption>Used for same aspect ratio and same image but of different resolution. To load image as per screen size and
+      network speed.</figcaption>
+  </figure>
+  <h1>Picture Tag</h1>
+  <figure>
+    <picture>
+      <source media="(min-width: 600px)" srcset="https://w.wallhaven.cc/full/6k/wallhaven-6k3oox.jpg">
+      <source srcset="https://w.wallhaven.cc/full/xl/wallhaven-xlr86l.png">
+      <img src="https://w.wallhaven.cc/full/6k/wallhaven-6k3oox.jpg" alt="digital art" width="800px" />
+    </picture>
+    <figcaption>Using picture with media attribute to display one image for one set of resolutions and other for other
+      image for
+      other set of resolution.</figcaption>
+  </figure>
+
+  <hr>
+
+  <h1>Figcaption/Figure tags</h1>
+  <figure>
+    <picture>
+      <source media="(min-width: 800px)" srcset="https://w.wallhaven.cc/full/md/wallhaven-md7dd8.jpg">
+      <source srcset="https://w.wallhaven.cc/full/p8/wallhaven-p8eer9.jpg">
+      <img src="https://w.wallhaven.cc/full/md/wallhaven-md7dd8.jpg" alt="digital art" width="800" />
+    </picture>
+    <figcaption>A random image.</figcaption>
+  </figure>
 
 </html>
