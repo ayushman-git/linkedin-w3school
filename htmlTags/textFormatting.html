@@ -94,8 +94,8 @@
   <hr>
   <h1>Links</h1>
   <a href="https://github.com/ayushman-git">ayushman-git</a> <span>Absoulte URL (Must have http or https prefix.)</span>
-<a href="/index.html" target="top">
-  <pre>
+  <a href="/index.html" target="top">
+    <pre>
     <code>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -116,11 +116,41 @@
     </code>
   </pre>
   </a>
-<p>Making other elements as link. Relative URL (going to a file in existing dir.)Target attribute with <ul>
-  <li>_blank - to open on a new tab</li>
-</ul>
-'/' directs to root element.
-</p>
+  <p>Making other elements as link. Relative URL (going to a file in existing dir.)Target attribute with
+  <ul>
+    <li>_blank - to open on a new tab</li>
+  </ul>
+  '/' directs to root element.
+  </p>
+
+  <hr>
+  <h1>Lang and Dir tags</h1>
+  <p lang="ru" dir="rtl">Чтобы реализовать концепцию рекламы, Apple должна была бы позволить FaceTime и Messages
+    работать везде. Но это держит их
+    эксклюзив для того, чтобы продавать больше устройств, жертвуя долгосрочной стратегией ради краткосрочной выгоды.
+    Отсутствие согласованности
+    обреченный отдел маркетинга Apple на рекламу «WFH» с самого начала.
+  </p>
+
+  <p>
+    Lang tag defines the language of that block of element and dir determines the direction flow of the content.
+    <ul>
+      <li>ltr - left to right</li>
+      <li>rtl - right to left</li>
+    </ul>
+  </p>
+
+  <hr>
+  <article>
+    <h1>Generic Tags</h1>
+    <p>The span is an inline generic tag which means we can use it <span>anywhere</span> in between lines and
+      characters.</p>
+    <div>Div is a block element which takes the whole width of the page. It is used to group a tags but it don't have a
+      semantive value.<br>
+      <strong>That's why we should always try to use semantic tags and use <code>&lt;span&gt;</code> and
+        <code>&lt;div&gt;</code> as a last resort.</strong>
+    </div>
+  </article>
 </body>
 
 </html>

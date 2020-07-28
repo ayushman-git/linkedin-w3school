@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <style>
+    form {
+      width: 30%;
+      padding: 2em;
+      background-color: rgb(226, 226, 226);
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+    }
+    input {
+      width: 60%;
+    }
+  </style>
+  <form action="../index.html" method="GET">
+    <label>Username:
+      <input name="username" type="text" required>
+    </label>
+
+    <label>Password:
+      <input name="password" type="password" required>
+    </label>
+
+    <label>Textarea:
+      <textarea name="text" id="" cols="30" rows="10"></textarea>
+    </label>
+
+    <label>Date:
+      <input name="random" type="date">
+    </label>
+
+    <label>Color:
+      <input name="random" type="color">
+    </label>
+
+    <label>File:
+      <input name="random" type="file" accept="image/*" multiple>
+    </label>
+
+    <label>Checkbox:
+      <input name="random" type="checkbox">
+    </label>
+
+    <fieldset>
+      <legend>Radio button</legend>
+      <label>
+        <input type="radio">
+        Radio one
+      </label>
+      <label>
+        <input type="radio">
+        Radio two
+      </label>
+      <label>
+        <input type="radio">
+        Radio three
+      </label>
+    </fieldset>
+
+    <button type="submit">Log In</button>
+  </form>
+</body>
+
+</html>
